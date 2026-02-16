@@ -211,24 +211,99 @@
 //     }
 // }
 
+// import java.util.Scanner;
+// class main2701{
+//     public static void main(String[] args) {
+//         Scanner in=new Scanner(System.in);
+//         int n;
+//         System.out.println("Enter n:");
+//         n=in.nextInt();
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=n-i;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=i;k++){
+//                 System.out.print(k);
+//             }
+//             for(int s=i-1;s>=1;s--){
+//                 System.out.print(s);
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+//perfect number
+// import java.util.Scanner;
+// class main2701{
+//         public static void main(String[] args) {
+//             Scanner in=new Scanner(System.in);
+//             System.out.println("Enter n:");
+//             int n=in.nextInt();
+//             int sum=0;
+//             for(int i=1;i<=n/2;i++){
+//                 if(n%i==0){
+//                     sum=sum+i;
+//                 }
+//             }
+//             if(n==sum){
+//                 System.out.println(n+" is a perfect number");
+//             }
+//             else{
+//                 System.out.println(n+" is not a perfect number");
+//             }
+
+//         }
+    
+// }
+
+
+// //fibonacci series
+// class main2701{
+//     public static void main(String[] args) {
+//         int n=10;
+
+//         int a=0,b=1;
+//         for(int i=0;i<=n;i++){
+//             System.out.println(a);
+//             int c=a+b;
+//             a=b;
+//             b=c;
+            
+//         }
+//     }
+// }
+
+
+//strong number
+
 import java.util.Scanner;
 class main2701{
     public static void main(String[] args) {
+
         Scanner in=new Scanner(System.in);
-        int n;
-        System.out.println("Enter n:");
-        n=in.nextInt();
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n-i;j++){
-                System.out.print(" ");
+        System.out.println("Enter num:");
+        int n=in.nextInt();
+        int t=n;
+        int sum=0;
+        while(n!=0){
+            int rem=n%10;
+            int fact=1;
+            for(int j=1;j<=rem;j++){
+                
+                fact=fact*j;
             }
-            for(int k=1;k<=i;k++){
-                System.out.print(k);
-            }
-            for(int s=i-1;s>=1;s--){
-                System.out.print(s);
-            }
-            System.out.println();
+                
+                sum+=fact;
+                n/=10;
+            
         }
+        if(t==sum){
+            System.out.println(t+" is a strong number");
+        }
+        else{
+            System.out.println(t+" is not a strong number");
+        }
+        
     }
 }
