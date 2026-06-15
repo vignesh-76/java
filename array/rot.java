@@ -20,7 +20,6 @@ public class rot {
             System.out.println();
         }
     }
-
     public static void leftRotation(int[] row, int k) {
 
         int n = row.length;

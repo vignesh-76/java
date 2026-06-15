@@ -11,8 +11,7 @@ public class reverse {
             a[j] = temp;
             i++;
             j--;
-        }
-
+        }  
         for (int k = 0; k < a.length; k++) {
             System.out.println(a[k]);
         }

@@ -235,7 +235,7 @@
 
 //         int n1 = Integer.parseInt(b1, 2);
 //         int n2 = Integer.parseInt(b2, 2);
-//         int sum = n1 + n2;
+//         int sum = n1 + n2;.
 
 //         System.out.println(Integer.toBinaryString(sum));
 //     }
@@ -320,53 +320,53 @@
 
 //hexa addition
 
-class main2801 {
-    public static void main(String[] args) {
+// class main2801 {
+//     public static void main(String[] args) {
 
-        String b1 = "AE4";
-        String b2 = "B26";
+//         String b1 = "AE4";
+//         String b2 = "B26";
 
-        while (b1.length() != b2.length()) {
-            if (b1.length() > b2.length()) {
-                b2 = '0' + b2;
-            } else {
-                b1 = '0' + b1;
-            }
-        }
+//         while (b1.length() != b2.length()) {
+//             if (b1.length() > b2.length()) {
+//                 b2 = '0' + b2;
+//             } else {
+//                 b1 = '0' + b1;
+//             }
+//         }
 
-        int carry = 0;
-        String result = "";
+//         int carry = 0;
+//         String result = "";
 
-        for (int i = b1.length() - 1; i >= 0; i--) {
+//         for (int i = b1.length() - 1; i >= 0; i--) {
 
-            int d1 = hexToDec(b1.charAt(i));
-            int d2 = hexToDec(b2.charAt(i));
+//             int d1 = hexToDec(b1.charAt(i));
+//             int d2 = hexToDec(b2.charAt(i));
 
-            int sum = d1 + d2 + carry;
-            int rem = sum % 16;
-            carry = sum / 16;
+//             int sum = d1 + d2 + carry;
+//             int rem = sum % 16;
+//             carry = sum / 16;
 
-            result = decToHex(rem) + result;
-        }
+//             result = decToHex(rem) + result;
+//         }
 
-        if (carry > 0) {
-            result = decToHex(carry) + result;
-        }
+//         if (carry > 0) {
+//             result = decToHex(carry) + result;
+//         }
 
-        System.out.println("Hexa Sum = " + result);
-    }
+//         System.out.println("Hexa Sum = " + result);
+//     }
 
-    static int hexToDec(char ch) {
-        if (ch >= '0' && ch <= '9')
-            return ch - '0';
-        else
-            return ch - 'A' + 10;
-    }
+//     static int hexToDec(char ch) {
+//         if (ch >= '0' && ch <= '9')
+//             return ch - '0';
+//         else
+//             return ch - 'A' + 10;
+//     }
 
-    static char decToHex(int n) {
-        if (n < 10)
-            return (char)(n + '0');
-        else
-            return (char)(n - 10 + 'A');
-    }
-}
+//     static char decToHex(int n) {
+//         if (n < 10)
+//             return (char)(n + '0');
+//         else
+//             return (char)(n - 10 + 'A');
+//     }
+// }

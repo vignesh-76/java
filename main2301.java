@@ -1,16 +1,16 @@
-// import java.util.Scanner;
-// public class main2301 {
-//     public static void main(String [] args){
-//         char c;
-//         Scanner in=new Scanner(System.in);
-//         System.out.println("Enter a h or t:");
-//         c=in.next().charAt(0);
-//         if(c=='h'){
-//             System.out.println("you are lucky");
-//         }
-//     }
+import java.util.Scanner;
+public class main2301 {
+    public static void main(String [] args){
+        char c;
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter a h or t:");
+        c=in.next().charAt(0);
+        if(c=='h'){
+            System.out.println("you are lucky");
+        }
+    }
     
-// }
+}
 
 
 // import java.util.Scanner;
@@ -364,27 +364,27 @@
 //     }
 // }
 
-import java.util.Scanner;
-public class main2301{
-    public static void main(String[] args) {
-        int m;
-        Scanner in=new Scanner(System.in);
-        System.out.println("Enter month");
-        m=in.nextInt();
-        if(m>12||m<0){
-            System.out.println("invalid month");
-        } 
-        else if(m==12&&m<=2){
-            System.out.println("Winter");
-        } 
-        else if(m>=3&&m<=5){
-            System.out.println("Spring");
-        } 
-        else if(m>=6&&m<=7){
-            System.out.println("Summer");
-        }     
-        else{
-        System.out.println("Autumn");    
-        }
-    }
-}
+// import java.util.Scanner;
+// public class main2301{
+//     public static void main(String[] args) {
+//         int m;
+//         Scanner in=new Scanner(System.in);
+//         System.out.println("Enter month");
+//         m=in.nextInt();
+//         if(m>12||m<0){
+//             System.out.println("invalid month");
+//         } 
+//         else if(m==12&&m<=2){
+//             System.out.println("Winter");
+//         } 
+//         else if(m>=3&&m<=5){
+//             System.out.println("Spring");
+//         } 
+//         else if(m>=6&&m<=7){
+//             System.out.println("Summer");
+//         }     
+//         else{
+//         System.out.println("Autumn");    
+//         }
+//     }
+// }

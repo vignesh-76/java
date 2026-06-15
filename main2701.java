@@ -47,7 +47,7 @@
 //         for(int i=1;i<=n;i++){
 //             for(int j=1;j<=i;j++){
                 
-//              System.out.print("*");
+//              System.out.print("*"+" ");
                 
 //             }
 //         System.out.println(" ");
@@ -69,7 +69,6 @@
 //             for(int j=1;j<=i;j++){
 //                 num=num*10;
 //                 num=num+9;
-                
 //             }
 //             sum=sum+num;
 //         }
@@ -88,8 +87,7 @@
 //         int n=in.nextInt();
         
 //         for(int i = 1;i<= n; i++){
-//             for(int j = 1; j <= n-i; j++)
-// {
+//             for(int j = 1; j <= n-i; j++){
 //              System.out.print(" ");
 //             }
 //             for(int k = 1;k <= (2*i)-1; k++){
@@ -277,33 +275,46 @@
 
 //strong number
 
-import java.util.Scanner;
-class main2701{
-    public static void main(String[] args) {
+// import java.util.Scanner;
+// class main2701{
+//     public static void main(String[] args) {
 
-        Scanner in=new Scanner(System.in);
-        System.out.println("Enter num:");
-        int n=in.nextInt();
-        int t=n;
-        int sum=0;
-        while(n!=0){
-            int rem=n%10;
-            int fact=1;
-            for(int j=1;j<=rem;j++){
+//         Scanner in=new Scanner(System.in);
+//         System.out.println("Enter num:");
+//         int n=in.nextInt();
+//         int t=n;
+//         int sum=0;
+//         while(n!=0){
+//             int rem=n%10;
+//             int fact=1;
+//             for(int j=1;j<=rem;j++){
                 
-                fact=fact*j;
-            }
+//                 fact=fact*j;
+//             }
                 
-                sum+=fact;
-                n/=10;
+//                 sum+=fact;
+//                 n/=10;
             
-        }
-        if(t==sum){
-            System.out.println(t+" is a strong number");
-        }
-        else{
-            System.out.println(t+" is not a strong number");
-        }
+//         }
+//         if(t==sum){
+//             System.out.println(t+" is a strong number");
+//         }
+//         else{
+//             System.out.println(t+" is not a strong number");
+//         }
         
-    }
-}
+//     }
+// }
+// class main2701{
+//     public static void main(String[] args) {
+//         int n=5;
+//         int fact=1;
+//         for(int i=1;i<=n;i++){
+//             fact=fact*i;
+//         }
+//         System.out.println(fact);
+
+
+//     }
+
+// }

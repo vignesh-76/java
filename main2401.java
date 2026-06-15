@@ -78,8 +78,9 @@
 //         }
 
 //     }
-//}
-//sum of digits
+// }
+
+//sum of numbers
 // import java.util.Scanner;
 // public class main2401 {
 //     public static void main(String[] args){
@@ -297,7 +298,7 @@
 
 //prime number from 1 to 1000
  
-//     public class main2401 {
+    // public class main2401 {
 //     public static void main(String[] args) {
 
 //         for (int n = 2; n <= 1000; n++) {
@@ -689,20 +690,20 @@
     // }
 
     //find the largest digit in a number
-    import java.util.Scanner;
-    class main2401{ 
-        public static void main(String[] args) {
-            Scanner in=new Scanner(System.in);
-            System.out.print("Enter n:");
-            int n=in.nextInt();
-            int max=0;
-            while(n!=0){
-                int rem=n%10;
-                if(rem>max){
-                    max=rem;
-                }
-                n=n/10;
-            }
-            System.out.println("Largest digit is "+max);
-        }
-    }
+    // import java.util.Scanner;
+    // class main2401{ 
+    //     public static void main(String[] args) {
+    //         Scanner in=new Scanner(System.in);
+    //         System.out.print("Enter n:");
+    //         int n=in.nextInt();
+    //         int max=0;
+    //         while(n!=0){
+    //             int rem=n%10;
+    //             if(rem>max){
+    //                 max=rem;
+    //             }
+    //             n=n/10;
+    //         }
+    //         System.out.println("Largest digit is "+max);
+    //     }
+    // }

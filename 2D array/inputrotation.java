@@ -10,7 +10,7 @@ public class inputrotation {
         System.out.println("enter the no of rotation:");
         int n=in.nextInt();
 
-        n = n % a[r].length;   
+        n = n % a[r].length;  
 
         for(int i=0;i<a.length;i++){
             if(i==r){
